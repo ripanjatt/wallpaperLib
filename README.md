@@ -1,7 +1,7 @@
 
 Anime photo API
 -
-> A simple API to get anime wallpapers free using <a href='https://wallpaperaccess.com'>Wallpaperaccess.com</a>
+> A simple API to get anime wallpapers free using <a href='https://wallpaperaccess.com' action='_blank'>Wallpaperaccess.com</a>
 
 Features
 -
