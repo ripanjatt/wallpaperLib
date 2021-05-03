@@ -10,7 +10,7 @@ Gets anime photos for free!
 Working
 -
 Simply add your search term and wait
-'''
+```
 val api = AnimeAPI()
     api.start("hinata")
     api.setAnimeListener(object: AnimeListener {
