@@ -5,8 +5,8 @@ Anime photo API
 
 Features
 -
-*Gets anime photos for free
-*Works with android(Java/Kotlin)
+* Gets anime photos for free
+* Works with android(Java/Kotlin)
 
 Gradle implementation(in app level build.gradle)
 -
