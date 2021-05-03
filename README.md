@@ -26,6 +26,7 @@ dependencies {
 Working
 -
 Simply add your search term and wait
+>Example
 ```
 val api = AnimeAPI()
     api.start("hinata")
@@ -45,3 +46,4 @@ val api = AnimeAPI()
 
     })
  ```
+ Here, urlList is an ArrayList containing urls of all the photos!
