@@ -18,7 +18,7 @@ allprojects {
 }
 
 dependencies {
- implementation 'com.github.ripanjatt:anime_photo_API:1.0.0'
+ implementation 'com.github.ripanjatt:wallpaperLib:1.0.0'
 }
 ```
 
