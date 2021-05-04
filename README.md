@@ -1,11 +1,10 @@
-
-Anime photo API
+Wallpaper library
 -
-> A simple API to get anime wallpapers free using <a href='https://wallpaperaccess.com'>Wallpaperaccess.com</a>
+> A simple library to get wallpapers free using <a href='https://wallpaperaccess.com'>Wallpaperaccess.com</a>
 
 Features
 -
-* Gets anime photos for free
+* Gets photos for free
 * Works with android(Java/Kotlin)
 
 Gradle implementation(in app level build.gradle)
@@ -19,7 +18,7 @@ allprojects {
 }
 
 dependencies {
- implementation 'com.github.ripanjatt:wallpaperLib:1.0.0'
+ implementation 'com.github.ripanjatt:anime_photo_API:1.0.0'
 }
 ```
 
@@ -28,9 +27,9 @@ Working
 Simply add your search term and wait
 >Example
 ```
-val api = WallpaperLib()
-    api.start("hinata")
-    api.setAnimeListener(object: Listener {
+val lib = WallpaperLib()
+    lib.start("hinata")
+    lib.setListener(object: Listener {
         override fun onStartListener() {
             println("Started!")
         }
