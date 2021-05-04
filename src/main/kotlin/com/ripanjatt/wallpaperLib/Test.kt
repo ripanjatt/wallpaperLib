@@ -1,9 +1,9 @@
 package com.ripanjatt.wallpaperLib
 
 fun main() {
-    val api = WallpaperLib()
-    api.start("hinata")
-    api.setListener(object: Listener {
+    val lib = WallpaperLib()
+    lib.start("hinata")
+    lib.setListener(object: Listener {
         override fun onStartListener() {
             println("Started!")
         }
