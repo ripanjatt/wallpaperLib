@@ -1,16 +1,18 @@
+package com.ripanjatt.wallpaperLib
+
 import java.net.URL
 import kotlin.concurrent.thread
 
-class AnimeAPI {
+class WallpaperLib {
 
     private val searchURL = "https://wallpaperaccess.com/search?q="
     private val mainURL = "https://wallpaperaccess.com/full/"
     private val list = ArrayList<String>()
 
-    private var animeListener: AnimeListener? = null
+    private var listener: Listener? = null
 
-    fun setAnimeListener(animeListener: AnimeListener) {
-        this.animeListener = animeListener
+    fun setListener(listener: Listener) {
+        this.listener = listener
     }
 
     fun start(keyWord: String) {
@@ -26,7 +28,7 @@ class AnimeAPI {
                 }
                 extract(html)
             } catch (e: Exception) {
-                animeListener?.onErrorListener("Error: $e")
+                listener?.onErrorListener("Error: $e")
             }
         }
     }
@@ -40,6 +42,6 @@ class AnimeAPI {
                 list.add(mainURL + link)
             }
         }
-        animeListener?.onCompleteListener(list)
+        listener?.onCompleteListener(list)
     }
 }

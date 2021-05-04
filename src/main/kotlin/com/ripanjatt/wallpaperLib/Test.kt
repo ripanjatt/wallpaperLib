@@ -1,7 +1,9 @@
+package com.ripanjatt.wallpaperLib
+
 fun main() {
-    val api = AnimeAPI()
+    val api = WallpaperLib()
     api.start("hinata")
-    api.setAnimeListener(object: AnimeListener {
+    api.setListener(object: Listener {
         override fun onStartListener() {
             println("Started!")
         }
