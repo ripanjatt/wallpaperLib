@@ -19,7 +19,7 @@ allprojects {
 }
 
 dependencies {
- implementation 'com.github.ripanjatt:anime_photo_API:1.0.0'
+ implementation 'com.github.ripanjatt:wallpaperLib:1.0.0'
 }
 ```
 
@@ -28,9 +28,9 @@ Working
 Simply add your search term and wait
 >Example
 ```
-val api = AnimeAPI()
+val api = WallpaperLib()
     api.start("hinata")
-    api.setAnimeListener(object: AnimeListener {
+    api.setAnimeListener(object: Listener {
         override fun onStartListener() {
             println("Started!")
         }
